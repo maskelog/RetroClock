@@ -6,5 +6,5 @@
 
 ## 설정창
 ![image](https://github.com/maskelog/RetroClock/assets/30742914/3172e360-e8bd-4629-8652-5f5b5559587e)   
-시계 색상과 배경화면 변경가능
+   시계 색상과 배경화면 변경가능
 ![image](https://github.com/maskelog/RetroClock/assets/30742914/d8a3fa1c-aed6-4801-82a4-5b5f5004478f)
