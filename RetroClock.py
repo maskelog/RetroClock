@@ -49,6 +49,11 @@ def settings():
     tk.Entry(settings_win, textvariable=time_color_var).pack(padx=10, pady=5)
     tk.Button(settings_win, text="Choose", command=choose_time_color).pack(padx=10, pady=5)
 
+    tk.Label(settings_win, text="Opacity:").pack(padx=10, pady=5)
+    opacity_scale = tk.Scale(settings_win, from_=0.1, to=1, resolution=0.1, orient=tk.HORIZONTAL, command=update_opacity)
+    opacity_scale.set(root.attributes('-alpha'))
+    opacity_scale.pack(padx=10, pady=5)
+
     tk.Button(settings_win, text="Apply Changes", command=update_colors).pack(padx=10, pady=10)
 
 def start_move(event):
@@ -72,6 +77,9 @@ def hide_buttons(event):
     # 버튼 프레임 위에 마우스가 없을 때만 숨깁니다.
     if not btn_frame.winfo_containing(event.x_root, event.y_root):
         btn_frame.pack_forget()
+
+def update_opacity(value):
+    root.attributes('-alpha', float(value))
 
 root = tk.Tk()
 
