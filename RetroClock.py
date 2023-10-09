@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import font as tkFont  # 폰트 모듈을 가져옵니다.
+from tkinter import font as tkFont
 from tkinter import colorchooser
 from time import strftime
 
