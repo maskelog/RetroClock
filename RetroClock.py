@@ -99,8 +99,7 @@ root.overrideredirect(True)
 root.configure(bg=color_var.get())
 root.attributes('-alpha', 0.9)
 
-label = tk.Label(root, font=ds_digital_font, foreground=time_color_var.get(),
-                 bg=color_var.get(), width=12, anchor='center', relief='ridge')
+label = tk.Label(root, font=ds_digital_font, foreground=time_color_var.get(), bg=color_var.get(), width=12, anchor='center', relief='ridge')
 label.pack(pady=2, fill='both', expand=True)
 
 btn_frame = tk.Frame(root, bg=color_var.get(), relief='ridge')
